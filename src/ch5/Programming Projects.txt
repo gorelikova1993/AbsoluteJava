@@ -1,0 +1,71 @@
+1.  Define a class called BookStore to maintain the record of books sold. The store contains three
+    categories of books i.e. “Kids”, “Engineering”, and “Story”. The following details should be maintained for each book.
+    a. Book category
+    b. Author
+    c. Title
+    d. Publisher
+    e. Selling price of the book
+    f. Quantity
+    Create a constructor that initializes the Store ID and the rest of the details of the book mentioned above.
+    Include a method named trackSalesStatus that will display the total number of books sold by the store
+     (add a static variable that tracks the total number of books sold). Also, include a method to display the quantity
+    available corresponding to each Book ID. Write a main method to test your class.
+
+2.  Define a class called Fraction. This class is used to represent a ratio of two integers.
+    Include mutator methods that allow the user to set the numerator and the
+    denominator. Also include a method that displays the fraction on the screen as a
+    ratio (e.g., 5>9). This method does not need to reduce the fraction to lowest terms.
+    Include an additional method, equals, that takes as input another Fraction and
+    returns true if the two fractions are identical and false if they are not. This
+    method should treat the fractions reduced to lowest terms; that is, if one fraction
+    is 20>60 and the other is 1>3, then the method should return true.
+    Embed your class in a test program that allows the user to create a fraction. Then
+    the program should loop repeatedly until the user decides to quit. Inside the body
+    of the loop, the program should allow the user to enter a target fraction into an
+    anonymous object and learn whether the fractions are identical.
+    Solution ex2
+3.  Create a class to represent a container. The class Container should have the following properties.
+        a. Maximum capacity of the container in liters.
+        b. Quantity of liquid at any given time in liters.
+    The following operations can be performed on the containers:
+        a. Completely fill a container.
+        b. Completely empty a container.
+        c. Transfer liquid from one container to another.
+    Define the class named Container that implements the properties and operations
+    defined above. Create a constructor of the Container class that allows the user to
+    specify the maximum capacity of the container in liters. Initially, assume that all
+    the containers are empty.
+    Also, implement the following methods in the Container class.
+        a. Quantity to return the current quantity of liquid at any given time in liters.
+        b. Leftover to return the quantity of liquid that can be filled in the current container before it is full.
+        c. Full to fill the current container fully.
+        d. Empty to make the container completely empty.
+        e. Transfer to transfer a certain amount of liquid from one container to another.
+        f. displayQuantity to display the current quantity in liters/ milliliters/ kiloliters.
+    Note: While transferring liquid from one container to another, check the maximum capacity of the container.
+    Also, include other supporting variables or methods wherever necessary.
+    Solution ex3
+
+4. You are interested in keeping track of the team members and competition information for your school’s annual entries in computer science programming competitions. Each team consists of exactly four team members. Every year your team
+   competes in two competitions. As an initial start for your database, create a class
+   named Team that has the following instance variables:
+       // Name for the team
+       String teamName;
+       // Names for each team members.
+       String name1, name2, name3, name4;
+       // Info on each competition
+       Competition competition1, competition2;
+   Note that there is a much better way to represent the team members and competitions using arrays; this is covered in a subsequent chapter. The class should also
+   have a method that outputs the names of all team members and the competition
+   information to the console.
+   The Competition class contains variables to track the following:
+   String: Name of the competition, Name of the winning team, Name of the runner-up
+   Integer: Year of the competition
+   Implement the Team and Competition classes with appropriate constructor, accessor,
+   and mutator methods. In entering data for past competitions, you note that an entry
+   is usually very similar to the previous year’s entry. To help with the data entry, create
+   a deep copy constructor for the Team class. Test your copy constructor by creating a
+   copy of an existing team object, changing the competition information for the copy,
+   and outputting the data for the original and the copy. The original object should be
+   unchanged if your deep copy constructor is working properly.
+   Solution ex4

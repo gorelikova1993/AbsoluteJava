@@ -1,0 +1,245 @@
+1.  Write a program that outputs a certain coded language. The program should print 26 code words, each comprising one letter and one digit, for example, A0, B1, C2,
+    D3, and so on. Your program should not use 26 output statements!
+    Design your program with a class named PrintCodeword whose constructor takes an initial value for the starting value of the letter, for example D,
+    and also an integer parameter that is the starting value of the number, for example 5. In this case, the series of codewords will be D5, E6, F7, and so on.
+    There will always be a total of 26 codewords.
+    If the value of letter reaches Z, it will then automatically move to A. Similarly, if the
+    value of digit reaches 9, then it should also move automatically to 0 as shown below.
+    D5
+    E6
+    F7
+    G8
+    ....
+    X5
+    Y6
+    Z7
+    A8
+    B9
+    C0
+    Design your program with a public method called print_Code that outputs all the
+    code words. Provide initial values of letters and digits from the main method class
+    during object creation.
+    Solution: folder ex1
+
+2.  Define a class called CalAge. This class is used to calculate age of a person from her or his date of birth and the current date.
+    Include a mutator method that allows the user to  enter her or his date of birth and set the value for current date. Also include a method to
+    return the age in years and months (for example, 25.5 years) as a double value. Include an additional method to check if the date of birth entered by the user
+    is a valid one. For example, 30 February 2008 is an invalid date. Embed your class in a test program.
+    Solution: folder ex2 not finished
+
+3.  Define a class called Vehicle that will be used to check the amount of fuel left in a vehicle after traveling a certain distance.
+    The class should have the instance variable tankSize to store the initial size of the tank and efficiency to store initial efficiency
+    of the vehicle. Set to zero the variable fuelInTank that is used to store the initial amount of fuel in a tank.
+    Include a mutator method that returns iniTankSize, initEfficiency and fuelInTank. Include an accessor method addPetrol that
+    calculates how much fuel can be filled depending on the fuel existing in the tank and the tank’s capacity. Also, include a method driveTo that returns what distance
+    can be traveled with the available fuel and provided efficiency. Use your class with a test program. You should decide which variables should be public, if any. Also,
+    define if any other method(s) are needed
+    Solution: ex3
+
+4.  Define a class called Journal that could be used to store an entry for a research
+    paper that will be published. The class should have instance variables to store the
+    author’s name, title of the paper, and the date of submission using the Date class
+    from this chapter. Add a constructor to the class that allows the user of the class
+    to set all instance variables. Also add a method, displayDetails, that outputs all
+    the instance variables, and another method called getSubmissionDetails that
+    returns the title of the paper, with the first letter of each word capitalized. Test your
+    class from the main method.
+    Solution ex4. there is used modified class Date from exercise 8
+
+5.  Define a class called WordCount whose objects count the number of words in a
+    sentence. An object of this class maintains a variable count that is a nonnegative
+    integer. Include methods to set the counter to 0, to increase the count by 1, and to
+    decrease the count by 1 if any word encountered starts with ‘A’ or ‘a’. Be sure that
+    no method allows the value of the counter to become negative. Include an accessor
+    method that returns the current count value and a method that outputs the count
+    to the screen. There should be no input method or other mutator methods. The
+    only method that can set the counter is the one that sets it to 0. Write a program
+    (or programs) to test all the methods in your class definition.
+    Solution ex5
+
+6.  Write a grading program for a class with the following grading policies:
+        a. There are three quizzes, each graded on the basis of 10 points.
+        b. There is one midterm exam, graded on the basis of 100 points.
+        c. There is one final exam, graded on the basis of 100 points.
+    The final exam counts for 40% of the grade. The midterm counts for 35% of the
+    grade. The three quizzes together count for a total of 25% of the grade. (Do not
+    forget to convert the quiz scores to percentages before they are averaged in.)
+    Any grade of 90 or more is an A, any grade of 80 or more (but less than 90) is a
+    B, any grade of 70 or more (but less than 80) is a C, any grade of 60 or more (but
+    less than 70) is a D, and any grade below 60 is an F. The program should read in
+    the student’s scores and output the student’s record, which consists of three quiz
+    scores and two exam scores, as well as the student’s overall numeric score for the
+    entire course and final letter grade.
+    Define and use a class for the student record. The class should have instance variables for the quizzes, midterm, final, overall numeric score for the course, and
+    final letter grade. The overall numeric score is a number in the range 0 to 100,
+    which represents the weighted average of the student’s work. The class should have
+    methods to compute the overall numeric grade and the final letter grade. These last
+    methods should be void methods that set the appropriate instance variables. Your
+    class should have a reasonable set of accessor and mutator methods, an equals
+    method, and a toString method, whether or not your program uses them. You
+    may add other methods if you wish.
+    Solution ex6
+
+7.  Write a Temperature class that has two instance variables: a temperature value
+    (a floating-point number) and a character for the scale, either C for Celsius or F for
+    Fahrenheit. The class should have four constructor methods: one for each instance
+    286 CHAPTER 4 Defining Classes Ivariable (assume zero degrees if no value is specified and Celsius if
+    no scale is specified), one with two parameters for the two instance variables, and a no-argument
+    constructor (set to zero degrees Celsius). Include the following: (1) two accessor
+    methods to return the temperature—one to return the degrees Celsius, the other
+    to return the degrees Fahrenheit—use the following formulas to write the two
+    methods, and round to the nearest tenth of a degree:
+    DegreesC = 5(degreesF - 32)/9
+    DegreesF = (9(degreesC)/5) + 32;
+    (2) three mutator methods: one to set the value, one to set the scale (F or C), and
+    one to set both; (3) three comparison methods: an equals method to test whether
+    two temperatures are equal, one method to test whether one temperature is greater
+    than another, and one method to test whether one temperature is less than
+    another (note that a Celsius temperature can be equal to a Fahrenheit temperature
+    as indicated by the above formulas); and (4) a suitable toString method. Then
+    write a driver program (or programs) that tests all the methods. Be sure to use
+    each of the constructors, to include at least one true and one false case for each of
+    the comparison methods, and to test at least the following temperature equalities:
+    0.0 degrees C = 32.0 degrees F, –40.0 degrees C = –40.0 degrees F, and 100.0
+    degrees C = 212.0 degrees F.
+    Solution ex7
+
+8.  Redefine the class Date in Display 4.13 so that the instance variable for the month
+    is of type int instead of type String. None of the method headings should change
+    in any way. In particular, no String type parameters should change to int type
+    parameters. You must redefine the methods to make things work out. Any program
+    that uses the Date class from Display 4.13 should be able to use your Date class
+    without any changes in the program. In particular, the program in Display 4.14
+    should work the same whether the Date class is defined as in Display 4.13 or is
+    defined as you do it for this project. Write a test program (or programs) that tests
+    each method in your class definition.
+    Solution: Date class
+
+9.  Define a class whose objects are records on animal species. The class should have
+    instance variables for the species name, population, and growth rate. The growth
+    rate is a percentage that can be positive or negative and can exceed 100%. Include
+    a suitable collection of constructors, mutator methods, and accessor methods.
+    Include a toString method and an equals method. Include a boolean valued
+    method named endangered that returns true when the growth rate is negative
+    and returns false otherwise. Write a test program (or programs) that tests each
+    method in your class definition.
+    Solution ex9
+
+10. Your vet’s office is using the Pet class defined in Display 4.15 and would like to
+    include a way to calculate the dosage amount for drugs that are commonly administered for dogs and cats. Make the following modifications to the class:
+        • Add an instance variable that indicates if the type of the pet is a dog or a cat.
+        • Modify the constructor and the set method to include the type of pet (i.e., dog or cat).
+        • Add a method named acepromazine( ) that returns as a double the dosage in ml for the sedative acepromazine.
+        • Add a method named carprofen( ) that returns as a double the dosage in ml for the pain killer carprofen.
+        The dosage calculation is  Dosage(ml) = Weight/2.2 * (mg per kg)/( mg per ml)
+    Weight is in pounds.
+        • For acepromazine, use mg per ml = 10, and mg per kg = 0.03 for dogs and 0.002 for cats.
+        • For carprofen, use mg per ml = 12, and mg per kg = 0.5 for dogs and 0.25 for cats.
+    Modify the main method in Display 4.16 to include tests of the new methods.
+    Solution ex 10
+
+11. Create a class named Pizza that stores information about a single pizza. It should
+    contain the following:
+    • Private instance variables to store the size of the pizza (either small, medium,
+    or large), the number of cheese toppings, the number of pepperoni toppings,
+    and the number of ham toppings.
+    • Constructor(s) that set all of the instance variables.
+    • Public methods to get and set the instance variables.
+    • A public method named calcCost( ) that returns a double that is the cost
+    of the pizza.
+    Pizza cost is determined by:
+    Small: $10 + $2 per topping
+    Medium: $12 + $2 per topping
+    Large: $14 + $2 per topping
+    • A public method named getDescription( ) that returns a String containing the pizza size, quantity of each topping, and the pizza cost as calculated
+    by calcCost( ).
+    Write test code to create several pizzas and output their descriptions. For
+    example, a large pizza with one cheese, one pepperoni and two ham toppings
+    should cost a total of $22.
+    Solution ex11
+
+12. This programming project extends Programming Project 4.11. Create a PizzaOrder
+    class that allows up to three pizzas to be saved in an order. Each pizza saved should be
+    a Pizza object as described in Programming Project 4.11. In addition to appropriate
+    instance variables and constructors, add the following methods:
+    • public void setNumPizzas(int numPizzas)—sets the number of pizzas
+    in the order. numPizzas must be between 1 and 3.
+    288 CHAPTER 4 Defining Classes I• public void setPizza1(Pizza pizza1)—sets the first pizza in the order.
+    • public void setPizza2(Pizza pizza2)—sets the second pizza in the order.
+    • public void setPizza3(Pizza pizza3)—sets the third pizza in the order.
+    • public double calcTotal()—returns the total cost of the order.
+    Write a main method to test the class. The setPizza2 and setPizza3 methods
+    will be used only if there are two or three pizzas in the order, respectively. Sample
+    code illustrating the methods is shown below. Note that first three lines are incomplete. You must complete them as part of the Programming Project.
+    Pizza pizza1 = // Code to create a large pizza, 1 cheese, 1 ham
+    Pizza pizza2 = // Code to create a medium pizza, 2 cheese, 2 pepperoni
+    PizzaOrder order = // Code to create an order
+    order.setNumPizzas(2); // 2 pizzas in the order
+    order.setPizza1(pizza1); // Set first pizza
+    order.setPizza2(pizza2); // Set second pizza
+    double total = order.calcTotal(); // Should be 18+20 = 38
+    Solution ex11
+
+13. Your Community Supported Agriculture (CSA) farm delivers a box of fresh fruits
+    and vegetables to your house once a week. For this Programming Project, define the
+    class BoxOfProduce that contains exactly three bundles of fruits or vegetables. You
+    can represent the fruits or vegetables as three instance variables of type String. Add
+    appropriate constructor, accessor, and mutator methods. Also write a toString()
+    method that returns as a String the complete contents of the box.
+    Next, write a main method that creates a BoxOfProduce with three items randomly
+    selected from this list:
+    Broccoli
+    Tomato
+    Kiwi
+    Kale
+    Tomatillo
+    This list should be stored in a text file that is read in by your program. For now
+    you can assume that the list contains exactly five types of fruits or vegetables.
+    Do not worry if your program randomly selects duplicate produce for the three
+    items. Next, the main method should display the contents of the box and allow
+    the user to substitute any one of the five possible fruits or vegetables for any of the
+    fruits or vegetables selected for the box. After the user is done with substitutions,
+    output the final contents of the box to be delivered. If you create additional methods to select the random items and to select valid substitutions, then your main
+    method will be simpler to write.
+    Solution ex 13
+
+14. A comma-separated values (CSV) file is a simple text format used to store a list of
+    records. A comma is used as a delimiter to separate the fields for each record. This
+    format is commonly used to transfer data between a spreadsheet or database. In
+    this Programming Project, consider a store that sells five products abbreviated as
+    A, B, C, D, and E. Customers can rate each product from 1–5, where 1 is poor
+    and 5 is excellent. The ratings are stored in a CSV file where each row contains
+    the customer’s rating for each product. Here is a sample file with three customer
+    ratings:
+    A,B,C,D,E
+    3,0,5,1,2
+    1,1,4,2,1
+    0,0,5,1,3
+    In this file format, the first line gives the products. The digit 0 indicates that a
+    customer did not rate a product. In this case, the first customer rated A as 3, C as
+    5, D as 1, and E as 2. Product B was not rated. The third customer rated C as 5,
+    D as 1, and E as 3. The third customer did not rate A or B.
+    Create a text file in this format with sample ratings. Then, write a program that
+    reads in this text file and extracts each rating using the StringTokenizer class.
+    Finally, the program should output the average rating for each product. Customers
+    that did not rate a product should not be considered when computing the average
+    rating for that product. Your program can assume there will always be exactly five
+    products but it should work with an arbitrary number of customer ratings
+    Solution ProductRateDemo
+
+15. The goal of this Programming Project is to extend Programming Project 14 to find
+    the customer from the CSV file who made ratings that are most similar to ratings
+    input from the keyboard. First, do Programming Project 14. Then modify your
+    solution so that it asks the user to input ratings for the first four products before
+    the program reads from the file. The program should then predict whether or
+    not the user will like the final product by outputting the rating made by the most
+    similar customer. Use the formula | Au – Ac| + | Bu – Bc| + | Cu – Cc| + | Du – Dc|
+    to compute the similarity, where Au is the rating for product A made by the user
+    at the keyboard and Ac is the rating for product A made by a customer from the
+    file. A lower total indicates greater similarity. For example, if the user inputs 1 for
+    product A, 1 for product B, 3 for product C, and 2 for product D, then with the
+    values from Programming Project 14, the similarity to the customer in the first row
+    is |1 – 3| + |1 – 0| + |3 – 5| + |2 – 1| = 6, while the similarity to the customer in the
+    second row is |1 – 1| + |1 – 1| + |3 – 4| + |2 – 2| = 1. The customer in the second
+    row has the greatest similarity, so the program would output that the prediction
+    for product E is 1, which is the second customer’s rating for product E.
