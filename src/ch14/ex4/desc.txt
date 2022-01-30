@@ -1,0 +1,8 @@
+Write a generic class, Marks, with a type parameter M where M is a numeric object
+type (e.g., Integer, Double, or any class that extends java.lang.Number). Add
+a method named orderAverage that takes an ArrayList of type M and returns
+a double type data which is the average of the values in the ArrayList. Use the
+doubleValue() method in the Number class to retrieve the value of each number
+as a double. Test your method with suitable data. Your program should generate
+a compile-time error if your average method is invoked on an ArrayList and a
+nonnumeric element is encountered (e.g., Strings).
